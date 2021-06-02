@@ -151,4 +151,29 @@ switch ($_POST["acao"]) {
         header("location: index.php");
 
         break;
+
+        case "deletar":
+
+            if(isset($_POST["produtoId"]) && $_POST["produtoId"] != ""){
+
+            $idCard = $_POST["produtoId"];
+            var_dump($idCard);
+
+            $idCard2 = $_REQUEST["produtoId"];
+            
+            
+            $delete = "DELETE FROM tbl_produto WHERE id = $idCard ";
+
+            $deleted = mysqli_query($conexao, $delete);
+
+            
+
+        }else {
+            $mensagem = "Erro ao deletar o produto!";
+        }
+
+        $mensagem = "Produto deletado com sucesso!";
+        header("location: index.php");
+
+        break;
 }
