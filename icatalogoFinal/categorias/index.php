@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 //importar o banco de dados
 require("../database/conexao.php");
 

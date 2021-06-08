@@ -191,8 +191,6 @@ switch ($_POST["acao"]) {
         $sqlInsert = " INSERT INTO tbl_produto (descricao, peso, quantidade, cor, tamanho, valor, desconto, imagem, categoria_id) 
                         VALUES ('$descricao', $peso, $quantidade, '$cor', '$tamanho', $valor, $desconto, '$novoNomeArquivo', $categoriaId) ";
 
-        echo $sqlInsert;
-
         //executamos o sql
         $resultado = mysqli_query($conexao, $sqlInsert) or die(mysqli_error($conexao));
 

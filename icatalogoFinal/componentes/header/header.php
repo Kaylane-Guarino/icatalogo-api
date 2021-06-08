@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <link href="/componentes/header/header.css" rel="stylesheet" />
 
 <?php
