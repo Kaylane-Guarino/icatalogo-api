@@ -89,6 +89,8 @@ class Categorias extends Controller{
         }
 
         header("location: /categorias");
+
+        //não consegui fazer...
         
     }
 
