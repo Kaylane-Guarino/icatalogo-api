@@ -1,0 +1,10 @@
+{
+    "name": "kaylane/icatalogo-api",
+    "description": "icatalogo API REST",
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    },
+    "require": {}
+}
